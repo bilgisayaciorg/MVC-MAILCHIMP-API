@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>BilgiSayaci.Org - Asp.Net Mvc ile MailChimp Api Kullanımı</h2>
+
+@if (ViewBag.Success != null && ViewBag.Success)
+{
+    <h3>Kayıt başarıyla eklenmiştir.</h3>
+}
+else
+{
+    <form action="" method="post">
+        <input type="text" name="email" />
+        <br />
+        <input type="submit" value="GÖNDER" />
+    </form>
+}
